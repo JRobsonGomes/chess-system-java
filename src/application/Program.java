@@ -1,10 +1,10 @@
 package application;
 
-import boardgame.Board;
+import chess.ChessMatch;
 
 public class Program {
     public static void main(String[] args) throws Exception {
-        Board board = new Board(8, 8);
-        System.out.println(board.getRow() + ", " + board.getColumn());
+        ChessMatch chessMath = new ChessMatch();
+        UI.printBoard(chessMath.getPieces());
     }
 }
